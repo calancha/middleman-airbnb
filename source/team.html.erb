@@ -1,0 +1,15 @@
+<div id="team">
+<ul class="list-inline text-center">
+  <% ["calancha", "hessa2"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <% if gh_username == 'calancha' %>
+         <h2 class="team-title">Constantino Calancha</h2>
+         <% else  %>
+         <h2 class="team-title">Hessa Ebrahim</h2>
+         <% end  %>
+      <p> <a href="https://github.com/<%=  gh_username  %>"> <i class="fa fa-github"></i> github</a></p>
+    </li>
+  <% end %>
+</ul>
+</div>
